@@ -28,7 +28,7 @@ function Footer(props) {
                     target="_blank">
                         <img 
                             className={`${props.mode}footer--img`}
-                            src="/linkedin.svg" 
+                            src="public/linkedin.svg" 
                             alt="LinkedIn" 
                         />
                 </a>
