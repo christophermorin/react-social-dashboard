@@ -21,7 +21,6 @@ h1,h2,h6,p{
     padding: 50px 75px;
     min-height: 100vh;
 }
-
 .nav--container{
     display: flex;
     align-items: center;
@@ -360,81 +359,16 @@ h1,h2,h6,p{
     color: hsl(230, 17%, 14%);
 }
 
-@media (min-width: 360px) {
-    .hero--container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .overview--container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .nav--mode{
-        display: none;
-    }
-    .light--nav--mode{
-        display: none;
-    }
-    
-  }
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .hero--container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .overview--container{
-        grid-template-columns: repeat(2, 1fr);
-    } 
-  }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .hero--container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .overview--container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .nav--mode{
-        display: inline;
-    }
-    .light--nav--mode{
-        display: inline;
-    }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .hero--container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .overview--container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-   
-   
- }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .hero--container{
-        
-        grid-template-columns: repeat(4, 1fr);
-        
-    }
-    .overview--container{
-        grid-template-columns: repeat(4, 1fr);
-    }
-   
- }
-
-
- .footer--container{
+/* **************************************************************************** */
+/* Footer Styles - Dark/Light */
+/* **************************************************************************** */
+.footer--container{
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     color: hsl(228, 34%, 66%);
     margin-top: 100px;
-   
  }
  .light--footer--container{
     display: flex;
@@ -461,7 +395,6 @@ h1,h2,h6,p{
     background: hsl(228, 34%, 66%);
     border-radius: 25px;
     transition: transform 0.5s;
-
  }
  .footer--img:hover{
     transform: scale(120%);
@@ -476,3 +409,62 @@ h1,h2,h6,p{
     transform: scale(120%);
  }
 
+/* **************************************************************************** */
+/* Media Queries */
+/* **************************************************************************** */
+@media (min-width: 360px) {
+    .hero--container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav--mode{
+        display: none;
+    }
+    .light--nav--mode{
+        display: none;
+    } 
+  }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+  }
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav--mode{
+        display: inline;
+    }
+    .light--nav--mode{
+        display: inline;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .hero--container{ 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .overview--container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+ }

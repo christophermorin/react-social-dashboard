@@ -1,11 +1,7 @@
-import {useState} from 'react'
-
 function Nav (props) {
     const style = {
         transform: 'translateX(140%)'
     }
-
-
 
     return (
         <div className="nav--container" >
@@ -16,7 +12,6 @@ function Nav (props) {
             <span className={`${props.mode}nav--mode`}>Dark Mode</span>
             <section className={`${props.mode}nav--selector`} onClick={props.toggleDarkmode}>
                 <section className={`${props.mode}nav--toggle`} style={props.darkMode ? {} : style} >
-
                 </section>
             </section>
         </div>

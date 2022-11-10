@@ -1,5 +1,4 @@
 function OverViewCard (props) {
-
     const gainColor = {
         color: ''
     }
@@ -12,14 +11,26 @@ function OverViewCard (props) {
     return (
         <div className={`${props.mode}overviewCard--card`}>
             <section className={`${props.mode}overviewCard--title`}>
-                <h6>{props.data.cardTitle}</h6>
-                <img src={`./src/assets/${props.data.socialIcon}`} alt="" />
+                <h6>
+                    {props.data.cardTitle}
+                </h6>
+                <img 
+                    src={`./src/assets/${props.data.socialIcon}`} 
+                    alt="" 
+                />
             </section>
             <section className={`${props.mode}overviewCard--stats`}>
-                <p>{props.data.cardCount}</p>
+                <p>
+                    {props.data.cardCount}
+                </p>
                 <section className="overviewCard--percent" style={gainColor}>
-                    <img src={`./src/assets/${props.data.percentIcon}`} alt=""/>
-                    <span>{props.data.cardStats}%</span>
+                    <img 
+                        src={`./src/assets/${props.data.percentIcon}`} 
+                        alt=""
+                    />
+                    <span>
+                        {props.data.cardStats}%
+                    </span>
                 </section>
             </section>
         </div>
