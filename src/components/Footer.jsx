@@ -18,7 +18,7 @@ function Footer(props) {
                     target="_blank">
                         <img 
                             className={`${props.mode}footer--img`}
-                            src="./src/assets/gear.svg" 
+                            src="/gear.svg" 
                             alt="Portfolio" 
                         />
                 </a>
@@ -28,7 +28,7 @@ function Footer(props) {
                     target="_blank">
                         <img 
                             className={`${props.mode}footer--img`}
-                            src="public/linkedin.svg" 
+                            src="/linkedin.svg" 
                             alt="LinkedIn" 
                         />
                 </a>
@@ -38,7 +38,7 @@ function Footer(props) {
                     target="_blank">
                         <img 
                             className={`${props.mode}footer--img`}
-                            src="./src/assets/github2.svg" 
+                            src="/github2.svg" 
                             alt="Github" 
                         />
                 </a>
@@ -48,7 +48,7 @@ function Footer(props) {
                     target="_blank">
                         <img 
                             className={`${props.mode}footer--img`}
-                            src="./src/assets/twitter.svg" 
+                            src="/twitter.svg" 
                             alt="Twitter" 
                         />
                 </a>
