@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h6,p{
+    margin: 0;
+}
+
+/* **************************************************************************** */
+/* Light Mode Styles */
+/* **************************************************************************** */
+/* *********************************************************** */
+/* Main Body/Nav Bar */
+/* *********************************************************** */
+.main--body{
+    background: linear-gradient(to top, hsl(230, 17%, 14%) 75%,hsl(232, 19%, 15%) 25% );
+    padding: 50px 75px;
+    min-height: 100vh;
+}
+
+.nav--container{
+    display: flex;
+    align-items: center;
+    height:  100px;
+    margin-bottom: 50px;
+}
+.nav--left{
+    margin-right: auto;
+}
+.nav--title{
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav--mode{
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.nav--followCount{
+    margin-top: 10px;
+    color: hsl(228, 34%, 66%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.nav--selector{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%)) ;
+    width: 50px;
+    border-radius: 25px;
+    padding: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav--toggle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: hsl(228, 28%, 20%);
+    position: relative;
+    transition: transform 0.4s;  
+}
+
+/* *********************************************************** */
+/* Hero Styles */
+/* *********************************************************** */
+.hero--container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.hero--card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(228, 28%, 20%);
+    padding: 30px 30px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.hero--card:hover{
+    background: hsl(228, 28%, 25%);
+}
+.heroCard--socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.heroCard--stats{
+    margin-top: 25px;
+    text-align: center;
+}
+.heroCard--stats h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+.heroCard--stats span{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: hsl(228, 34%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+}
+.heroCard--percent{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+.border--facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+    border-radius: 10px;
+}
+.border--twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+    border-radius: 10px;
+}
+.border--instagram{
+    background: linear-gradient(hsl(228, 28%, 20%), hsl(228, 28%, 20%)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+}
+.border--instagram:hover{
+    background: linear-gradient(hsl(228, 28%, 25%), hsl(228, 28%, 25%)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+}
+.border--youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+    border-radius: 10px;
+}
+
+/* *********************************************************** */
+/* Overview Styles */
+/* *********************************************************** */
+.overview--container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.overviewCard--card{
+    padding: 30px;
+    background: hsl(228, 28%, 20%);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.overviewCard--card:hover{
+    background: hsl(228, 28%, 25%);
+}
+.overview--title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+.overviewCard--title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.overviewCard--title h6{
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.overviewCard--stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.overviewCard--stats p{
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+.overviewCard--percent{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+/* **************************************************************************** */
+/* Light Mode Styles */
+/* **************************************************************************** */
+
+/* *********************************************************** */
+/* Main Body/Nav Bar */
+/* *********************************************************** */
+.light--main--body{
+    background: linear-gradient(to top, hsl(0, 0%, 100%) 75%,hsl(225, 100%, 98%) 25% );
+    min-height: 100vh;
+    padding: 50px 75px;
+}
+.light--nav--title{
+    color: hsl(230, 17%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.light--nav--followCount{
+    margin-top: 10px;
+    color: hsl(228, 12%, 44%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.light--nav--mode{
+    color: hsl(228, 12%, 44%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.light--nav--selector{
+    display: flex;
+    align-items: center;
+    background: hsl(230, 22%, 74%) ;
+    width: 50px;
+    border-radius: 25px;
+    padding: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.light--nav--selector:hover{
+    background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%)) ;
+    
+}
+.light--nav--toggle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: hsl(227, 47%, 96%);
+    position: relative;
+    transition: transform 0.4s;  
+}
+
+/* *********************************************************** */
+/* Hero Styles */
+/* *********************************************************** */
+.light--hero--card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(227, 47%, 96%);
+    padding: 30px 30px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.light--hero--card:hover{
+    background: hsl(227, 47%, 92%);
+}
+.light--heroCard--socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.light--heroCard--stats{
+    margin-top: 25px;
+    text-align: center;
+}
+.light--heroCard--stats h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(230, 17%, 14%);
+}
+.light--heroCard--stats span{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 44%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+.light--border--facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+    border-radius: 10px;
+}
+.light--border--twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+    border-radius: 10px;
+}
+.light--border--instagram{
+    background: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+}
+.light--border--instagram:hover{
+    background: linear-gradient(hsl(227, 47%, 92%), hsl(227, 47%, 92%)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+}
+.light--border--youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+    border-radius: 10px;
+}
+
+/* *********************************************************** */
+/* Overview Styles */
+/* *********************************************************** */
+.light--overview--title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 44%)
+}
+.light--overviewCard--card{
+    padding: 30px;
+    background: hsl(227, 47%, 96%);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.light--overviewCard--card:hover{
+    background: hsl(227, 47%, 92%);
+}
+
+.light--overviewCard--title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.light--overviewCard--title h6{
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.light--overviewCard--stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.light--overviewCard--stats p{
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(230, 17%, 14%);
+}
+
+@media (min-width: 360px) {
+    .hero--container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav--mode{
+        display: none;
+    }
+    .light--nav--mode{
+        display: none;
+    }
+    
+  }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav--mode{
+        display: inline;
+    }
+    .light--nav--mode{
+        display: inline;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .hero--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview--container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+   
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .hero--container{
+        
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .overview--container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+   
+ }
+
+
+ .footer--container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: hsl(228, 34%, 66%);
+    margin-top: 100px;
+   
+ }
+ .light--footer--container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: hsl(230, 17%, 14%);
+    margin-top: 100px;
+ }
+ .footer--link{
+    text-decoration: none;
+    color:  hsl(0, 0%, 100%);
+ }
+ .light--footer--link{
+    text-decoration: none;
+    color:  hsl(228, 34%, 66%);
+ }
+ .footer--socials{
+    display: flex;
+    gap: 20px;
+ }
+ .footer--img{
+    height: 35px;
+    background: hsl(228, 34%, 66%);
+    border-radius: 25px;
+    transition: transform 0.5s;
+
+ }
+ .footer--img:hover{
+    transform: scale(120%);
+ }
+ .light--footer--img{
+    height: 35px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    transition: transform 0.5s;
+ }
+ .light--footer--img:hover{
+    transform: scale(120%);
+ }
+
