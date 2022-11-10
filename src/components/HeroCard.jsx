@@ -12,7 +12,7 @@ function HeroCard (props) {
         <div className={`${props.mode}hero--card ${props.mode}${props.data.border}`} >
             <section className={`${props.mode}heroCard--socials`}>
                 <img 
-                    src={`./src/assets/${props.data.socialIcon}`} 
+                    src={`/src/assets/${props.data.socialIcon}`} 
                     alt="Social Icon" />
                 <span>
                     {props.data.socialTag}
