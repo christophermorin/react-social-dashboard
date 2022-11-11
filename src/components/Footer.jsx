@@ -21,6 +21,7 @@ function Footer(props) {
                         <img 
                             className={`${props.mode}footer--img`}
                             src="/gear.svg" 
+                            alt="Portfolio" 
                         />
                 </a>
                 <a 
@@ -30,6 +31,7 @@ function Footer(props) {
                         <img 
                             className={`${props.mode}footer--img`}
                             src="/linkedin.svg" 
+                            alt="Linked In"
                         />
                 </a>
                 <a 
@@ -39,6 +41,7 @@ function Footer(props) {
                         <img 
                             className={`${props.mode}footer--img`}
                             src="/github2.svg" 
+                            alt="Github"
                         />
                 </a>
                 <a 
@@ -48,6 +51,7 @@ function Footer(props) {
                         <img 
                             className={`${props.mode}footer--img`}
                             src="/twitter.svg" 
+                            alt="Twitter"
                         />
                 </a>
             </section>

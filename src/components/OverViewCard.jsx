@@ -16,7 +16,7 @@ function OverViewCard (props) {
                 </h6>
                 <img 
                     src={`/${props.data.socialIcon}`} 
-                    alt="" 
+                    alt="Social Icon" 
                 />
             </section>
             <section className={`${props.mode}overviewCard--stats`}>
@@ -26,7 +26,7 @@ function OverViewCard (props) {
                 <section className="overviewCard--percent" style={gainColor}>
                     <img 
                         src={`/${props.data.percentIcon}`} 
-                        alt=""
+                        alt="Percentage"
                     />
                     <span>
                         {props.data.cardStats}%
