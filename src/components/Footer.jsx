@@ -2,7 +2,10 @@
 function Footer(props) {
     return (
         <div className={`${props.mode}footer--container`}>
-            <p>&copy; 
+            <p className="footer--copy">
+                <span>
+                    &copy;
+                </span>
                 <a 
                     className={`${props.mode}footer--link`} 
                     href="https://chrismorin.netlify.app/" 

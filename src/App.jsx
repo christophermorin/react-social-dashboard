@@ -11,7 +11,17 @@ function App() {
         setDarkMode(prevState => !prevState)
     }
     
+
+    
+
   const mode = darkMode ? '' : 'light--'
+
+  if(darkMode){
+    document.querySelector('body').style.background = "linear-gradient(to top, hsl(230, 17%, 14%) 75%,hsl(232, 19%, 15%) 25% )"
+  }
+  else{
+    document.querySelector('body').style.background = "linear-gradient(to top, hsl(0, 0%, 100%) 75%,hsl(225, 100%, 98%) 25% )"
+  }
   
   return (
     <div className={`${mode}main--body`}>
